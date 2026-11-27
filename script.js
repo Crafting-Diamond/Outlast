@@ -6,3 +6,5 @@ players.push({
     materials:0,
     defending:false
 });
+
+<p>Choose 3 actions.</p>
