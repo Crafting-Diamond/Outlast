@@ -11,3 +11,13 @@ players.push({
 
 let dailyChoices = [];
 let currentActions = [];
+
+const possibleActions = [
+    "Attack",
+    "Find Food",
+    "Find Water",
+    "Gather Materials",
+    "Build Defenses",
+    "Defend",
+    "Rest"
+];
