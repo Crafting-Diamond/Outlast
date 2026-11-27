@@ -8,3 +8,6 @@ players.push({
 });
 
 <p>Choose 3 actions.</p>
+
+let dailyChoices = [];
+let currentActions = [];
