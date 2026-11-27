@@ -21,3 +21,30 @@ const possibleActions = [
     "Defend",
     "Rest"
 ];
+
+function chooseAction(action){
+
+    currentActions.push(action);
+
+    if(currentActions.length < 3){
+
+        document.getElementById("currentPlayer").innerHTML =
+        `
+        <h3>${players[currentPlayerIndex].name}</h3>
+        <p>Action ${currentActions.length}/3 chosen.</p>
+        `;
+
+        return;
+    }
+
+    dailyChoices.push({
+        player: players[currentPlayerIndex],
+        actions: [...currentActions]
+    });
+
+    currentActions = [];
+
+    currentPlayerIndex++;
+
+    askPlayer();
+}
