@@ -187,3 +187,11 @@ function runDay(){
 
     document.getElementById("log").innerHTML = results;
 }
+
+function addPlayer() {
+    alert("Add Player Works!");
+}
+
+function startGame() {
+    alert("Start Game Works!");
+}
