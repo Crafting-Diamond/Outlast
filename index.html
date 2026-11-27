@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outlast PreV-0.1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>🏆 OUTLAST</h1>
+        <p class="version">PreV-0.1</p>
+
+        <div id="setup">
+
+            <h2>Add Players</h2>
+
+            <input
+                id="playerName"
+                type="text"
+                placeholder="Player Name"
+            >
+
+            <button onclick="addPlayer()">
+                Add Player
+            </button>
+
+            <div id="playerList"></div>
+
+            <button class="start-btn" onclick="startGame()">
+                Start Game
+            </button>
+
+        </div>
+
+        <div id="game" class="hidden">
+
+            <h2 id="dayTitle">
+                Day 1
+            </h2>
+
+            <div id="currentPlayer"></div>
+
+            <div id="actions"></div>
+
+        </div>
+
+        <div id="summary" class="hidden">
+
+            <h2>Day Results</h2>
+
+            <div id="log"></div>
+
+            <button onclick="nextDay()">
+                Next Day
+            </button>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
