@@ -1,0 +1,9 @@
+const possibleActions = [
+    "Attack",
+    "Find Food",
+    "Find Water",
+    "Gather Materials",
+    "Build Defenses",
+    "Defend",
+    "Rest"
+];
